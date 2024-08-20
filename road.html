@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road</title>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <style>
+        body {
+        margin: 0%;
+        width: fit-content;
+        /* Uncomment the line below to enable the background image */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/city3.jpg');
+        /* Make sure the path is correct */
+        background-size: cover;
+        position: relative;
+}
+        .vertical-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding-left: 20px; /* Adjust padding as needed */
+        background-color: #100a0a; /* Adjust background color */
+        margin-bottom: 3%;
+        }
+        h1 {
+        position: relative;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        font-family: "Oswald", sans-serif;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: #f1ecec;
+        text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #424950;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 80px; /* Adjust width as needed */
+
+    }
+        h3 {
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+        h2 {
+            font-family: "Oswald", sans-serif;
+            color: #db1a6a;
+        }
+        .image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="vertical-heading-container">
+        <h1>Roadworks</h1>
+        <div class="image-container" style="display: flex; justify-content: center; margin-top: -9%; margin-left: 20%;">
+            <img src="images/gotham.png" alt="Gotham city" style="max-width: 50%; height: auto;">
+          </div>
+            <button class="back-button" onclick="redirectToIndex()">Back</button>
+        </div>
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <!-- <img src="images/mission.jpg" alt="services" style="max-width: 40%; height: auto; border-radius: 20px;"> -->
+        <div class="text-container" style="margin-left: 20px; margin-top: 1px;">
+            <!-- <h1 style="color: rgb(222, 7, 7);">Our Mission</h1> -->
+            <h3>We carry out roadworks to repair and improve the roads in Walsall Borough. This may involve road closures and diversions, or the use of temporary traffic lights.</h3> 
+            <h3>Public utility companies also carry out roadworks to maintain essential gas, water, electricity and phone services. If there is an emergency, they can close a road up to two hours before letting us know about it.</h3>
+            <h2>👉🏻 Current roadworks</h2>
+            <h3>You can view a map on the one.network website, showing active roadworks.</h3>
+            <h2>👉🏻 M6 and A5</h2>
+            <h3>These roads are maintained by National Highways. You can find out if they are undertaking or planning any works on the West Midlands section of their website. There are also more details about the M6 improvement scheme that affects junction 10 in Walsall.</h3>
+            <h2>👉🏻 A34 Sprint</h2>
+            <h3>Transport for West Midlands (TfWM) is creating a bus priority corridor to link Walsall with the centre of Birmingham, Solihull and Birmingham Airport. You can find A34 construction updates on the TfWM website.</h3>
+            <h2>👉🏻 Resurfacing programme</h2>
+            <h3>The documents below outline our planned work for 2023-2024.</h3>
+            <hr>
+            <h3>Structural highway maintenance program &nbsp; &nbsp; &nbsp;
+                <a href="1.pdf" target="_blank" style="color: yellow;">Download PDF (144.76 KB)</a></h3>
+            <h3>Carriage surface dressing program&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="1.pdf" target="_blank" style="color: yellow;">Download PDF (144.76 KB)</a></h3>
+            
+        </div> 
+    </div>
+
+ 
+   
+    <script>
+        function redirectToIndex() {
+          window.location.href = "services.html";
+        }
+      </script>
+</body>
+</html>

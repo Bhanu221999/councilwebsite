@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gotham City</title>
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-<HASH>"
+      crossorigin="anonymous"
+    />
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <script>
+        require ('dotenv').config();
+      const firebaseConfig = {
+        apiKey: process.env.API_KEY,
+        authDomain: "gotham-council.firebaseapp.com",
+        databaseURL: "https://gotham-council-default-rtdb.firebaseio.com",
+        projectId: "gotham-council",
+        storageBucket: "gotham-council.appspot.com",
+        messagingSenderId: "309321662337",
+        appId: "1:309321662337:web:3b3fc69080386fade27280",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <img src="images/gotham.png" alt="logo" />
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="What can I help you with?                                                                                                                                                                       🔍"
+          oninput="showSuggestions()"
+        />
+        <button class="search-button" onclick="searchKeywords()">Search</button>
+        <button
+          class="profile-button"
+          onclick="window.location.href = 'profile.html'"
+        >
+          <i class="fas fa-user"></i>
+        </button>
+      </div>
+      <div class="image-container">
+        <img src="images/gothamcity.jpg" alt="" width="50%" />
+      </div>
+      <div id="suggestionDropdown"></div>
+    </div>
+    <div id="suggestionDropdown"></div>
+    </div>
+    </div>
+    <h1
+      style="
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      "
+    >
+      Latest News
+    </h1>
+    <div class="Images-wrap">
+      <div class="photo photo-1"></div>
+      <div class="photo photo-2"></div>
+      <div class="photo photo-3"></div>
+      <div class="photo photo-4"></div>
+      <div class="photo photo-5"></div>
+    </div>
+
+    <div
+      class="container"
+      style="display: flex; align-items: center"
+    >
+      <img
+        src="images/services1.png"
+        alt="services"
+        style="max-width: 95%; height: auto"
+      />
+      <div
+        class="text-container"
+        style="margin-left: 50px; margin-top: -100px"
+      >
+        <h1>⇣</h1>
+        <a href="services.html">
+          <button
+            style="
+              background-color: #ae5630;
+              color: #f0e7e7;
+              padding: 30px 20px;
+              border-color: black;
+              cursor: pointer;
+              border-radius: 20px;
+              margin-right: -90%;
+              margin-top: -40%;
+            "
+          >
+            Click here for services
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <footer>
+        <div class="logo-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/gotham.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li style="color: #f0e7e7">
+              © 2022 Gotham Council, All rights reserved
+            </li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/bhamcitycouncil/"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://www.facebook.com/birminghamcitycouncil/"
+            ><i class="fab fa-facebook-f fa-2x"></i
+          ></a>
+          <a href="https://twitter.com/BhamCityCouncil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/gotham.png" alt="logo" />
+        </a>
+      </div>
+      <ul class="links">
+        <h4>Main Menu</h4>
+        <li>
+          <span class="material-symbols-outlined">dashboard</span>
+          <a href="index.html">Dashboard</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">show_chart</span>
+          <a href="revenue.html">Revenue</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">room_service</span>
+          <a href="services.html">Services</a>
+        </li>
+        <hr />
+        <h4>More</h4>
+        <li>
+          <span class="material-symbols-outlined">phone_in_talk</span>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">info</span>
+          <a href="about.html">About</a>
+        </li>
+        <li class="logout-link" id="loginLogoutLink"></li>
+      </ul>
+    </aside>
+    <script src="script.js"></script>
+        <script>
+        // Check if the user is logged in
+        firebase.auth().onAuthStateChanged((user) => {
+          const loginLogoutLink = document.getElementById("loginLogoutLink");
+          if (user) {
+            // User is logged in
+            const logoutLink = document.createElement("a");
+            logoutLink.href = "#";
+            logoutLink.textContent = "Logout";
+            logoutLink.style.border = "1px solid black";
+            logoutLink.style.padding = "5px";
+            logoutLink.onclick = () => {
+              firebase.auth().signOut()
+                .then(() => {
+                  // Sign-out successful
+                  console.log("User signed out");
+                  // Redirect to the login page or perform other actions
+                  window.location.href = "login.html";
+                })
+                .catch((error) => {
+                  // An error occurred
+                  console.error("Error signing out:", error);
+                });
+            };
+            loginLogoutLink.appendChild(logoutLink);
+            const logoutSpan = document.createElement("span");
+            logoutSpan.className = "material-symbols-outlined";
+            logoutSpan.textContent = "logout";
+            loginLogoutLink.insertBefore(logoutSpan, logoutLink);
+          } else {
+            // User is not logged in
+            const loginLink = document.createElement("a");
+            loginLink.href = "login.html";
+            loginLink.textContent = "Login";
+            loginLink.style.border = "1px solid black";
+            loginLink.style.padding = "5px";
+            loginLogoutLink.appendChild(loginLink);
+            const loginSpan = document.createElement("span");
+            loginSpan.className = "material-symbols-outlined";
+            loginSpan.textContent = "login";
+            loginLogoutLink.insertBefore(loginSpan, loginLink);
+          }
+        });
+        </script>

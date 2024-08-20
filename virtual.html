@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual</title>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <style>
+        body {
+        margin: 0%;
+        width: fit-content;
+        /* Uncomment the line below to enable the background image */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/city3.jpg');
+        /* Make sure the path is correct */
+        background-size: cover;
+        position: relative;
+}
+        .vertical-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding-left: 20px; /* Adjust padding as needed */
+        background-color: #100a0a; /* Adjust background color */
+        margin-bottom: 3%;
+        }
+        h1 {
+        position: relative;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        font-family: "Oswald", sans-serif;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: #f1ecec;
+        text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background-color: #424950;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 80px; /* Adjust width as needed */
+
+    }
+        h3 {
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+        h2 {
+            font-family: "Oswald", sans-serif;
+            color: rgb(231, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <div class="vertical-heading-container">
+        <h1>VIRTUAL SCHOOL</h1>
+        <div class="image-container" style="display: flex; justify-content: center; margin-top: -9%; margin-left: 20%;">
+            <img src="images/gotham.png" alt="Gotham city" style="max-width: 50%; height: auto;">
+          </div>
+            <button class="back-button" onclick="redirectToIndex()">Back</button>
+        </div>
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <div class="text-container" style="margin-left: 20px; margin-top: 1px;">
+            <h3>UCB’s Virtual School works with children in care and care leavers. It's a local authority run service that aims to raise the educational attainment and aspirations of children and young people in care.</h3> 
+            <h3>We work with all people associated with children in care. We provide advice and guidance to parents and teachers of children who have previously been in care. Our role is to promote high expectations through support and challenge to schools, social care staff and parents/carers.</h3>
+            <h3><a href="https://www.ucb.ac.uk/student-support/learning-support/canvas/" style="color: yellow;">Visit the UCB Virtual School website</a> </h3>
+            <hr>
+            <h3>Quick guide to the Virtual School &nbsp; &nbsp; &nbsp;
+                <a href="Virtual School.pdf" target="_blank" style="color: yellow;">Download PDF (144.76 KB)</a></h3>
+            <hr>
+
+            <h3>If you are working with a child in care or care leaver and would like to discuss their education, either to raise concerns or request additional support, you can <a href="contact.html" style="color: yellow;">email us</a>.</h3>
+        </div> 
+    </div>
+
+ 
+   
+    <script>
+        function redirectToIndex() {
+          window.location.href = "services.html";
+        }
+      </script>
+</body>
+</html>

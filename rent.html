@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent</title>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <style>
+        body {
+        margin: 0%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/city3.jpg');
+        background-size: cover;
+        position: relative;
+}
+        .vertical-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding-left: 20px; /* Adjust padding as needed */
+        background-color: #100a0a; /* Adjust background color */
+        margin-bottom: 3%;
+        }
+        h1 {
+        position: relative;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        font-family: "Oswald", sans-serif;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #f1ecec;
+        text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #424950;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 80px; /* Adjust width as needed */
+
+    }
+        h3 {
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+        h2 {
+            font-family: "Oswald", sans-serif;
+            color: #db1a6a;
+        }
+        .image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="vertical-heading-container">
+        <h1>Pay your rent</h1>
+        <div class="image-container" style="display: flex; justify-content: center; margin-top: -9%; margin-left: 20%;">
+            <img src="images/gotham.png" alt="Gotham city" style="max-width: 50%; height: auto;">
+          </div>
+            <button class="back-button" onclick="redirectToIndex()">Back</button>
+        </div>
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <!-- <img src="images/mission.jpg" alt="services" style="max-width: 40%; height: auto; border-radius: 20px;"> -->
+        <div class="text-container" style="margin-left: 20px; margin-top: 1px;">
+            <!-- <h1 style="color: rgb(222, 7, 7);">Our Mission</h1> -->
+            <div class="container">
+                <h2>👉🏻 Paying by Direct Debit</h2>
+                <h3>Direct Debit is the safest and easiest way to pay your rent. <br>
+                  With a Direct Debit you tell your bank or building society that you want us to take your monthly rent payments direct from your account <br>Once you have registered, go into 'My Accounts', validate your rent account and you will be able to set up a Direct Debit. <br>
+          
+                  Alternatively you can set up a Direct Debit by calling us on 0121 368 1166.  You'll need your account name, personal bank account number and sort code.</h3> <br>
+                <div>
+                  <h2>👉🏻 Paying online</h2>
+                  <h3>If you prefer you can <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNv3hUHa27JkC8l_RfiwE7m-Y52qRZdfCistf9HexLCW5UNA/viewform?embedded=true" style="color: yellow;">pay your rent on the web </a>with your Visa, MasterCard, Solo, Visa Delta, Visa Electron or Maestro cards..</h3> <br>
+                <h2>👉🏻 View your rent balance</h2>
+                <h3>You can <a href="https://my.sandwell.gov.uk/en/AchieveForms/?form_uri=sandbox-publish://AF-Process-a95bee06-943a-4e79-a48a-7cf3c064b1c1/AF-Stage-4fc6bed9-1e0d-4ed7-be62-95d8d07273b6/definition.json&redirectlink=%2F&cancelRedirectLink=%2F" style="color: yellow;">check the balance on your rent account</a> before you pay.</h3>
+                
+            
+        </div> 
+    </div>
+
+ 
+   
+    <script>
+        function redirectToIndex() {
+          window.location.href = "services.html";
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #424242;
+    background-position: left;
+    background-size: cover;
+}
+
+
+.sidebar {
+z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.5s ease;
+}
+
+.logout-link {
+    display: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 55px 10px 15px;
+    transition: padding 0.5s ease; /* Transition on padding change */
+
+}
+
+.logo img {
+    width: 100%; /* Make the logo image responsive */
+    max-width: 250px; /* Max width of the logo */    
+}
+
+
+
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 55px;
+    display: none;
+}
+
+.sidebar:hover .logo h2 {
+    display: block;
+}
+
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.links li:hover {
+    cursor: pointer;
+    background: #fff;
+}
+
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.sidebar:hover .links h4 {
+    display: block;
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+    display: block;
+}
+
+.links .logout-link {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* ===============================
+         !! images !!
+=========================*/
+
+.container {
+    background-color: #424242;
+    padding: 75px 0;
+    margin: 0 auto;
+    margin-top: 0%;
+    /* width: calc(100% - 110px);  */
+    width: 100%;
+    top: 0;
+    padding-left: 120px; /* Added padding to accommodate the sidebar width */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+  
+  h1 {
+    position: relative;
+    margin-bottom: 45px;
+    font-family: "Oswald", sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #424242;
+    text-align: center;
+  }
+  
+  .Images-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    padding-left: 150px; /* Added padding to accommodate the sidebar width */
+    padding-right: 50px; /* Added padding to accommodate the sidebar width */
+
+  }
+  
+  .photo {
+    z-index: 1;
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+}
+
+.photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.photo:hover::before {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+
+  
+  .photo:hover {
+    flex: 7;
+    filter: blur(0px);
+  }
+  
+
+
+  .photo-1 {
+    background-image: url("images/card1.jpeg");
+  }
+  
+  .photo-2 {
+    background-image: url("images/card2.jpeg");
+  }
+  
+  .photo-3 {
+    background-image: url("images/card3.jpeg");
+  }
+  
+  .photo-4 {
+    background-image: url("images/card4.jpeg");
+ 
+  }
+  
+  .photo-5 {
+    background-image: url("images/card5.jpeg");
+  }
+  
+
+
+
+  
+/* ===============================
+         !! search button !!
+=========================*/
+/* =============================== !! search button !! =========================*/
+/* =============================== !! search button !! =========================*/
+    body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 90%;
+        /* max-width: 1000px; */
+        margin-top: -20px;
+      }
+      
+      .search-bar img {
+        height: 50px;
+        margin-right: 20px;
+      }
+      
+      .search-bar input[type="text"] {
+        border: none;
+        outline: none;
+        flex-grow: 1;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin-right: 10px;
+      }
+      
+      .search-button {
+        border: none;
+        outline: inset;
+        background-color: #ae5630;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+      
+      .profile-button {
+        background-color: rgb(235, 201, 185);
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      
+      .image-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        width: 190%;
+        height: 130%;
+      }
+      
+      
+
+
+/* ===============================
+         !! footer !!
+=========================*/
+
+
+
+.footer-container {
+    background-color: #333; /* Example background color */
+    padding: 20px; /* Adjust padding as needed */
+    /* margin-top: 5%; */
+}
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 130px;
+}
+h1 {
+    color: #b8b5a9;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* or inline-block */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
+
+nav ul li a {
+    color: yellow; /* Yellow color for anchor links */
+}
+
+
+
+/* Assuming you've included Font Awesome CSS in your project */
+.social-icons a {
+    color: rgb(235, 21, 21); /* Adjust the color as needed */
+    margin-right: 10px; /* Adjust the spacing between icons */
+}
+
+.social-icons a:hover {
+    color: skyblue; /* Change color on hover */
+}
+
+
+/* ===============================
+         !! searchbar suggestions !!
+=========================*/
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the search bar */
+
+}
+
+.dropdown-content a {
+    color: rgb(246, 238, 238);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#suggestionDropdown {
+    position: absolute;
+    width: 57%;
+    background-color: #070707;
+    border: 0px solid #ddd;
+    border-radius: 10px; /* Add border radius to make the box curved */
+    max-height: 600px;
+    overflow-y: auto;
+    z-index: 1000;
+    top: calc(4% + 85px); /* Position below the search bar */
+    left: 28%;
+}
+
+.suggestion {
+    color: rgb(239, 232, 232); /* Change the color to your desired color */
+    cursor: pointer; /* Add cursor pointer for better UX */
+    padding: 10px 16px; /* Add padding for space around each suggestion */
+}
+
+.suggestion:first-child {
+    margin-top: 10px; /* Add margin to the top of the first suggestion */
+}
+
+.suggestion:not(:first-child) {
+    margin-top: 5px; /* Add margin between each suggestion */
+}
+
+.suggestion:hover {
+    background-color: #1f1b1b; /* Add hover effect */
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <style>
+        body{
+            margin: 0%;
+            background-color: #444;
+        }
+        .vertical-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding-left: 20px; 
+        background-color: #100a0a; 
+        margin-bottom: 3%;
+        }
+        h1 {
+        position: relative;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        font-family: "Oswald", sans-serif;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: #f1ecec;
+        text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background-color: #424950;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 80px; /* Adjust width as needed */
+
+    }
+        h2 {
+            font: optional;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="vertical-heading-container">
+        <h1>About us</h1>
+        <button class="back-button" onclick="redirectToIndex()">Back</button>
+        </div>
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <img src="images/mission.jpg" alt="services" style="max-width: 40%; height: auto; border-radius: 20px;">
+        <div class="text-container" style="margin-left: 20px; margin-top: 1px;">
+            <h1 style="color: rgb(222, 7, 7);">Our Mission</h1>
+            <h2>"Our mission is to empower and serve our community by providing essential services, fostering a safe and thriving environment, and advocating for the well-being of all residents."</h2> 
+            <h2>"We are committed to upholding the values of transparency in our operations, accountability to the residents we serve, sustainability in our practices, and inclusivity in our decision-making."</h2>
+        </div> 
+    </div>
+    
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <div class="text-container" style="margin-right: auto; margin-top: -50px;">
+            <h1 style="color: rgb(222, 7, 7);">Our Plan</h1>
+            <h2>"To realize this vision, we are committed to a multifaceted plan. This plan focuses on enhancing public safety, fostering economic growth and job creation, and building a strong and connected community through strategic investments in infrastructure, social programs, and cultural initiatives. We will prioritize transparency and collaboration throughout this process, ensuring residents are informed, engaged, and empowered to contribute to the success of our shared future."</h2> 
+        </div>
+        <iframe width="200%" height="315" src="https://www.youtube.com/embed/jmRibZWEBZ0?si=LDRgtwhldKuZV8tA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div>
+    
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <img src="images/vision.jpg" alt="services" style="max-width: 40%; height: auto; border-radius: 20px;">
+        <div class="text-container" style="margin-left: 20px; margin-top: -100px;">
+            <h1 style="color: rgb(222, 7, 7);">Our Vision</h1>
+            <h2>"We aspire to create a thriving and inclusive community where everyone feels empowered, safe, and valued. We envision a place where residents have access to quality services, vibrant cultural experiences, and sustainable opportunities to reach their full potential."</h2> 
+        </div> 
+    </div>
+    <script>
+        function redirectToIndex() {
+          window.location.href = "index.html";
+        }
+      </script>
+</body>
+</html>

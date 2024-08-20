@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Change</title>
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-<HASH>" crossorigin="anonymous" />
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #444;
+    color: #f7f0f0;
+    padding: 20px;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .info-section {
+    background-color: #7ca9ed;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  .info-section h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #392929;
+    padding-bottom: 10px;
+  }
+  .info-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .info-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .info-section ul li {
+    background: #a56a6a;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .rounded {
+    background-color: #b9ed1b;
+    color: #040505;
+    border-radius: 20px; /* Adjust the value to control the curvature */
+}
+.larger {
+    font-size: 16px; /* Adjust the font size to make the button larger */
+    padding: 5px 15px; /* Adjust padding to increase the size */
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="info-section">
+      <h2>Income Support</h2>
+      <p>If you have recently started work, you can find out about benefits and other help that may be available on the GOV.UK website.</p>
+      <h2>If your savings change</h2>
+      <p>Tell us if your savings:</p>
+      <ul>
+        <li>Go over £6,000 for the first time</li>
+        <li>Go over £16,000</li>
+        <li>Go down significantly because you have had to spend some</li>
+      </ul>
+      <p>You should also tell us if:</p>
+      <ul>
+        <li>You are working age, have savings of £6,000 or more, and they increase by £250 or more</li>
+        <li>You or your partner reach the qualifying age for State Pension Credit and your savings go over £10,000 for the first time</li>
+      </ul>
+      <p>You do not need to tell us about small changes in your current account or any stocks or shares you hold.</p>
+      <h2>Household changes</h2>
+      <p>Includes marriages, births, deaths, or someone moving in or out.
+
+        You must tell us if:</p>
+      <ul>
+        <li>someone moves in or moves out</li>
+        <li>your partner moves in or moves out</li>
+        <li>You get married</li>
+        <li>You sublet</li>
+        
+      </ul>
+      <button class="rounded larger" onclick="redirectToForm()">Report a problem</button> <br> <br>
+
+      
+    </div>
+  </div>
+  <aside class="sidebar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/gotham.png" alt="logo">
+        </a>        
+      </div>
+    <ul class="links">
+      <h4>Main Menu</h4>
+      <li>
+        <span class="material-symbols-outlined">dashboard</span>
+        <a href="index.html">Dashboard</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">show_chart</span>
+        <a href="revenue.html">Revenue</a>
+      </li>
+      <li>
+          <span class="material-symbols-outlined">room_service</span>            
+          <a href="services.html">Services</a>
+      </li>
+      <hr>
+      <h4>More</h4>
+      <li>
+          <span class="material-symbols-outlined">phone_in_talk</span>          
+          <a href="contact.html">Contact</a>
+      </li>
+      <li>
+          <span class="material-symbols-outlined">info</span>          
+          <a href="about.html">About</a>
+      </li>
+      <li class="logout-link">
+        <span class="material-symbols-outlined">logout</span>
+        <a href="login.html" style="border: 1px solid black; padding: 5px;">Logout</a>
+      </li>
+    </ul>
+  </aside>
+  <script src="script.js"></script>
+  <script>
+    function redirectToForm() {
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdQvEJ4ptUWc5DmJvZMqTqjq8E_Efw_7EYFe-Rme87SXLUPfg/viewform?embedded=true";
+    }
+</script>
+</body>
+</html>

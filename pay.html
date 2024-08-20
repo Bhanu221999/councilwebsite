@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Council Tax</title>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <style>
+        body {
+        margin: 0%;
+        width: fit-content;
+        /* Uncomment the line below to enable the background image */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/city3.jpg');
+        /* Make sure the path is correct */
+        background-size: cover;
+        position: relative;
+}
+
+
+
+        .vertical-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding-left: 20px; /* Adjust padding as needed */
+        background-color: #100a0a; /* Adjust background color */
+        margin-bottom: 3%;
+        }
+        h1 {
+        position: relative;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        font-family: "Oswald", sans-serif;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: #f1ecec;
+        text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #424950;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 80px; /* Adjust width as needed */
+
+    }
+        h3 {
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+        h2 {
+            font-family: "Oswald", sans-serif;
+            color: #db1a6a;
+        }
+        .image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="vertical-heading-container">
+        <h1>COUNCIL TAX</h1>
+        <div class="image-container" style="display: flex; justify-content: center; margin-top: -9%; margin-left: 20%;">
+            <img src="images/gotham.png" alt="Gotham city" style="max-width: 50%; height: auto;">
+          </div>
+            <button class="back-button" onclick="redirectToIndex()">Back</button>
+        </div>
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <!-- <img src="images/mission.jpg" alt="services" style="max-width: 40%; height: auto; border-radius: 20px;"> -->
+        <div class="text-container" style="margin-left: 20px; margin-top: 1px;">
+            <!-- <h1 style="color: rgb(222, 7, 7);">Our Mission</h1> -->
+            <h2>👉🏻 Set up an online account</h2>
+            <h3>You can view your bill and make payments by registering for our council tax online service.</h3>
+            <h2>👉🏻 Set up a direct debit</h2>
+            <h3>You can set up a direct debit using our council tax online service.</h3>
+            <h2>👉🏻 Pay online</h2>
+            <h3>Pay your council tax with <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNv3hUHa27JkC8l_RfiwE7m-Y52qRZdfCistf9HexLCW5UNA/viewform?embedded=true" style="color: yellow;">our online payments system</a>.</h3> 
+            <h2>👉🏻 Pay by phone</h2>
+            <h3>If you have a touch tone phone, you can call our <a href="contact.html" style="color: yellow;">24 hour automated payment line</a>.</h3>
+            <h3>You will need your eight digit account number, and a debit or credit card. It should take no longer than five minutes to complete the call.</h3>
+            <h2>👉🏻 Pay by banking app</h2>
+            <h3>If you are in arrears we will contact you and give you the option to pay via your banking app.</h3>
+            <h2>👉🏻 Pay at PayPoint outlets</h2>
+            <h3>Present your bill to the retailer to process your payment. Allow 3 working days for your payment to reach us. Please keep your receipt(s). This facility is free if you use the barcode on the bill.</h3>
+            <h2>👉🏻 Pay at any Post Office</h2>
+            <h3>Present your bill to the cashier to process your payment. Allow 2 working days for your payment to reach us. Cheques should be made payable to Post Office Ltd. This facility is free if you use the barcode on your bill.</h3>
+            
+        </div> 
+    </div>
+
+ 
+   
+    <script>
+        function redirectToIndex() {
+          window.location.href = "services.html";
+        }
+      </script>
+</body>
+</html>

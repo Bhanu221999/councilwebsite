@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Street</title>
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-<HASH>" crossorigin="anonymous" />
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #444;
+    color: #f7f0f0;
+    padding: 20px;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .info-section {
+    background-color: #7ca9ed;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  .info-section h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #392929;
+    padding-bottom: 10px;
+  }
+  .info-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .info-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .info-section ul li {
+    background: #a56a6a;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .rounded {
+    background-color: #b9ed1b;
+    color: #040505;
+    border-radius: 20px; /* Adjust the value to control the curvature */
+}
+
+.larger {
+    font-size: 16px; /* Adjust the font size to make the button larger */
+    padding: 5px 10px; /* Adjust padding to increase the size */
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="info-section">
+      <h2>Report a street problem</h2>
+      <h4>How to report a problem with a road or footpath</h4>
+      <p>You can use our online reporting form to tell us about the following problems on roads and footpaths anywhere in Walsall Borough:</p>
+      <ul>
+        <li>potholes</li>
+        <li>blocked road drains (find out what to do if you have a flood on your property)</li>
+        <li>missing or damaged manhole covers (find out who is responsible if it's on your property)</li>
+        <li>road and pavement defects (for example, broken slabs or kerbs)</li>
+        <li>faded road markings</li>
+        <li>missing or damaged road signs</li>
+        <li>skips and scaffolding</li>
+        <li>traffic calming</li>
+      </ul>
+      <h4>Make a report </h4>
+      <p>To report a problem online you will need to tell us:</p>
+      <ul>
+        <li>where it is (we won't take action if it’s outside Walsall Borough or on private land)</li>
+        <li>your contact details, so we can follow up the report</li>
+        <li>as much detail as you can</li>
+        <p>You can also provide photographs, if it is safe to do so. You'll be able to upload images to the online form. Each file should be under 5mb in size.</p>
+      </ul> <br>
+      <button class="rounded larger" onclick="redirectToForm()">Report a problem</button> <br> <br>
+    </div>
+  </div>
+  <aside class="sidebar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/gotham.png" alt="logo">
+        </a>        
+      </div>
+    <ul class="links">
+      <h4>Main Menu</h4>
+      <li>
+        <span class="material-symbols-outlined">dashboard</span>
+        <a href="index.html">Dashboard</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">show_chart</span>
+        <a href="revenue.html">Revenue</a>
+      </li>
+      <li>
+          <span class="material-symbols-outlined">room_service</span>            
+          <a href="services.html">Services</a>
+      </li>
+      <hr>
+      <h4>More</h4>
+      <li>
+          <span class="material-symbols-outlined">phone_in_talk</span>          
+          <a href="contact.html">Contact</a>
+      </li>
+      <li>
+          <span class="material-symbols-outlined">info</span>          
+          <a href="about.html">About</a>
+      </li>
+      <li class="logout-link">
+        <span class="material-symbols-outlined">logout</span>
+        <a href="login.html" style="border: 1px solid black; padding: 5px;">Logout</a>
+      </li>
+    </ul>
+  </aside>
+  <script>
+    function redirectToForm() {
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdQvEJ4ptUWc5DmJvZMqTqjq8E_Efw_7EYFe-Rme87SXLUPfg/viewform?embedded=true";
+    }
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

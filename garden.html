@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <style>
+        body{
+            margin: 0%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/city3.jpg');
+            background-size: cover;
+        }
+        .vertical-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding-left: 20px; /* Adjust padding as needed */
+        background-color: #100a0a; /* Adjust background color */
+        margin-bottom: 3%;
+        }
+        h1 {
+        position: relative;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        font-family: "Oswald", sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #f1ecec;
+        text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #424950;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 80px; /* Adjust width as needed */
+
+    }
+        h3 {
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+        h4 {
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+        h2 {
+            font-family: "Oswald", sans-serif;
+            color: #db1a6a;
+        }
+        .image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="vertical-heading-container">
+        <h1>GARDEN WASTE <br> COLLECTION</h1>
+        <div class="image-container" style="display: flex; justify-content: center; margin-top: -9%; margin-left: 20%;">
+            <img src="images/gotham.png" alt="Gotham city" style="max-width: 50%; height: auto;">
+          </div>
+            <button class="back-button" onclick="redirectToIndex()">Back</button>
+        </div>
+    <div class="container" style="display: flex; align-items: center; margin-bottom: 100px;">
+        <!-- <img src="images/mission.jpg" alt="services" style="max-width: 40%; height: auto; border-radius: 20px;"> -->
+        <div class="text-container" style="margin-left: 20px; margin-top: 1px;">
+            <!-- <h1 style="color: rgb(222, 7, 7);">Our Mission</h1> -->
+            <h2>Our garden waste collection service</h2> 
+            <h3>What is the garden waste service?</h3>
+           <h4>The service is a fortnightly collection of garden waste. <br> <br>
+      
+              There will be 20 collections in 2024 that will happen between Monday 4 March to Friday 6 December..</h4> 
+              <h3>Cost</h3>
+              <h4>You have to sign up for and pay to receive this service. <br> <br>
+      
+                  The cost for the 2024 service is £60.</h4>  <br>
+                  <hr>
+                  <h2>Other ways to get rid of garden waste</h2>
+                  <h3>Household Recycling Centres</h3>
+                  <h4>There are 5 <a href="https://www.birmingham.veolia.co.uk/household-recycling-centres" style="color: yellow;">Household Recycling Centres</a>
+                       across the city where you can take your garden waste.</h4>
+                  <h3>Book a bulky waste collection</h3>
+                  <h4>You can book a <a href="bulk.html" style="color: yellow;">bulky waste collection</a> for up to 10 large items or up to 20 bin bags.</h4> <br>
+                  <h3>Composting</h3>
+                  <h4>Composting is an inexpensive, natural process that transforms your garden and food waste into nutrient food for your soil. <a href="https://getcomposting.com/" style="color: yellow;">Get Composting.</a></h4>
+      
+        </div> 
+    </div>
+
+ 
+   
+    <script>
+        function redirectToIndex() {
+          window.location.href = "services.html";
+        }
+      </script>
+</body>
+</html>
